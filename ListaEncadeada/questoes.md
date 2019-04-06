@@ -15,8 +15,8 @@
 8. Crie uma função para remover no começo de uma Lista `char *lista__unshift(Lista **this)`
 9. Crie uma função para remover no final de uma Lista `char *lista__pop(Lista **this)`
 10. Crie uma função para remover uma determinada string da Lista `char *lista__remove(Lista **this, char *string)`
-11. Crie uma função para limpar a Lista/remover todos mós da Lista `void lista__clear(Lista **this)`
+11. Crie uma função para limpar a Lista/remover todos nós da Lista `void lista__clear(Lista **this)`
 12. Crie uma função para imprimir a lista, separando cada nó por uma string passada para a função `void lista__join(Lista *this, char *separador)`
 13. Crie uma função que retorna a quantidade de nós em uma lista encadeada `int lista__length(Lista *this)`
 14. Crie uma função que retorna uma string que está em uma posição da Lista `char *lista__get(Lista *this, int posicao)`
-15. Crie uma função que ordena as strings dd uma Lista Encadeada em ordem alfabética `void lista__sort(Lista *this)`
+15. Crie uma função que ordena as strings de uma Lista Encadeada Circular em ordem alfabética `void lista__sort(Lista *this)`

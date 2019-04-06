@@ -193,6 +193,8 @@ char *lista__unshift(Lista **this)
 		return NULL;
 	
 	str_removida = remover->str;
+	// liberando memória do primeiro nó
+	free(*this);
 	// o novo primeiro nó da Lista passa a ser o segundo nó
 	*this = remover->prox;
 	// retorna a string do nó removido
