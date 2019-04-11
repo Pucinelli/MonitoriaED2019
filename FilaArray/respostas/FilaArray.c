@@ -74,7 +74,7 @@ void fila__push(Fila *this, char *str)
 char *fila__unshift(Fila *this)
 {
 	int posicao;
-	// se polha nao estiver vazia podemos remover
+	// se fila nao estiver vazia podemos remover
 	if (this->tamanho > 0)
 	{
 		// a posição a ser removida é o início
@@ -194,42 +194,42 @@ void fila__sort(Fila *this)
 
 int main(int argc, char **argv)
 {
-	Fila *p = fila__new();
+	Fila *f = fila__new();
 	
-	fila__push(p, "Hello");
-	fila__push(p, "World");
-	fila__print(p);
+	fila__push(f, "Hello");
+	fila__push(f, "World");
+	fila__print(f);
 	
-	printf("removendo '%s'\n", fila__unshift(p));
-	fila__print(p);
+	printf("removendo '%s'\n", fila__unshift(f));
+	fila__print(f);
 	
-	fila__clear(p);
+	fila__clear(f);
 
-	fila__push(p, "legal");
-	fila__push(p, "eh");
-	fila__push(p, "array");
-	fila__push(p, "com");
-	fila__push(p, "fila");
+	fila__push(f, "legal");
+	fila__push(f, "eh");
+	fila__push(f, "array");
+	fila__push(f, "com");
+	fila__push(f, "fila");
 
-	fila__print(p);
-	fila__rprint(p);
-	fila__join(p, "_");
+	fila__print(f);
+	fila__rprint(f);
+	fila__join(f, "_");
 	
-	printf("A fila tem %d strings\n", fila__length(p));
-	fila__clear(p);
+	printf("A fila tem %d strings\n", fila__length(f));
+	fila__clear(f);
 	
-	fila__push(p, "b");
-	fila__push(p, "c");
-	fila__push(p, "e");
-	fila__push(p, "d");
-	fila__push(p, "g");
-	fila__push(p, "f");
-	fila__push(p, "a");
-	fila__push(p, "h");
-	fila__push(p, "j");
-	fila__push(p, "i");
+	fila__push(f, "b");
+	fila__push(f, "c");
+	fila__push(f, "e");
+	fila__push(f, "d");
+	fila__push(f, "g");
+	fila__push(f, "f");
+	fila__push(f, "a");
+	fila__push(f, "h");
+	fila__push(f, "j");
+	fila__push(f, "i");
 	
-	fila__sort(p);
-	fila__print(p);
+	fila__sort(f);
+	fila__print(f);
 }
 
