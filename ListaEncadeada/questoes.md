@@ -19,4 +19,4 @@
 12. Crie uma função para imprimir a lista, separando cada nó por uma string passada para a função `void lista__join(Lista *this, char *separador)`
 13. Crie uma função que retorna a quantidade de nós em uma lista encadeada `int lista__length(Lista *this)`
 14. Crie uma função que retorna uma string que está em uma posição da Lista `char *lista__get(Lista *this, int posicao)`
-15. Crie uma função que ordena as strings de uma Lista Encadeada Circular em ordem alfabética `void lista__sort(Lista *this)`
+15. Crie uma função que ordena as strings de uma Lista Encadeada em ordem alfabética `void lista__sort(Lista *this)`
